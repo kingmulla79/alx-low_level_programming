@@ -1,21 +1,15 @@
 #include "main.h"
+#include<unistd.h>
 
 /**
- * main - Entry point
+ * _putchar - write a character to standard output
  *
- * Return: Always 0 (Success)
+ * @c: char to print
+ *
+ * Return: Always 1 (Success)
  */
 
-int main(void)
+char _putchar(char c)
 {
-	char *word = "_putchar";
-
-	while (*word)
-	{
-		_putchar(*word);
-		word++;
-	}
-	_putchar('\n');
-
-	return (0);
+	return (write(1, &c, 1));
 }
