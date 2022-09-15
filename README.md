@@ -1,2 +1,1 @@
-Low level programming directory
-All the C programming practices begin here
+ C programming directory
